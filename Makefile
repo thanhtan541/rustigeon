@@ -57,5 +57,5 @@ show-todos:
 mealstrom-serve:
 	~/devel/personal/maelstrom/maelstrom test -w echo --bin target/debug/rustigeon --node-count 1 --time-limit 10
 
-mealstrom-test:
-	~/devel/personal/maelstrom/maelstrom test -w echo --bin target/debug/rustigeon --node-count 1 --time-limit 10
+mealstrom-test-echo:
+	~/devel/personal/maelstrom/maelstrom test -w echo --bin target/debug/echo --node-count 1 --time-limit 10
