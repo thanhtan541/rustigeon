@@ -10,7 +10,12 @@ path = "src/lib.rs"
 path = "src/bin/echo.rs"
 name = "echo"
 
+[[bin]]
+path = "src/bin/unique-ids.rs"
+name = "unique_ids"
+
 [dependencies]
 serde = { version = "1",  features = ["derive"]}
 serde_json = { version = "1" }
 anyhow = { version = "1" }
+ulid = { version = "1" }

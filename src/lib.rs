@@ -3,6 +3,8 @@ use std::io::{stdin, stdout, StdoutLock};
 use anyhow::Context;
 use serde::{de::DeserializeOwned, Deserialize, Serialize};
 
+mod processor;
+
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Message<Payload> {
     pub src: String,

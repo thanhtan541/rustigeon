@@ -59,3 +59,6 @@ mealstrom-serve:
 
 mealstrom-test-echo:
 	~/devel/personal/maelstrom/maelstrom test -w echo --bin target/debug/echo --node-count 1 --time-limit 10
+
+mealstrom-test-unique-ids:
+	~/devel/personal/maelstrom/maelstrom test -w unique-ids --bin target/debug/unique_ids --time-limit 30 --rate 1000 --node-count 3 --availability total --nemesis partition
